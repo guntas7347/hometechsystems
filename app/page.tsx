@@ -11,12 +11,13 @@ import {
   Star,
   ArrowRight,
 } from "lucide-react";
+import Image from "next/image";
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-zinc-950">
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-zinc-900 to-zinc-950">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSI2MCIgaGVpZ2h0PSI2MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTSAxMCAwIEwgMCAwIDAgMTAiIGZpbGw9Im5vbmUiIHN0cm9rZT0icmdiYSgyNTUsMjU1LDI1NSwwLjAzKSIgc3Ryb2tlLXdpZHRoPSIxIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI2dyaWQpIi8+PC9zdmc+')] opacity-50"></div>
+        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/207574/pexels-photo-207574.jpeg')] bg-cover bg-center opacity-30"></div>
         <div className="relative text-center px-4 max-w-5xl mx-auto">
           <Shield className="h-20 w-20 text-red-600 mx-auto mb-6" />
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
@@ -153,7 +154,13 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 hover:border-red-600 transition">
               <div className="h-64 bg-zinc-800 flex items-center justify-center">
-                <Camera className="h-16 w-16 text-zinc-700" />
+                <Image
+                  src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg"
+                  alt="image"
+                  height={1000}
+                  width={1000}
+                  className="size-full"
+                />
               </div>
               <div className="p-6">
                 <h3 className="text-white font-semibold mb-2">
@@ -167,7 +174,13 @@ export default function HomePage() {
 
             <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 hover:border-red-600 transition">
               <div className="h-64 bg-zinc-800 flex items-center justify-center">
-                <Home className="h-16 w-16 text-zinc-700" />
+                <Image
+                  src="https://images.pexels.com/photos/20169858/pexels-photo-20169858.jpeg"
+                  alt="image"
+                  height={1000}
+                  width={1000}
+                  className="size-full"
+                />{" "}
               </div>
               <div className="p-6">
                 <h3 className="text-white font-semibold mb-2">
@@ -181,7 +194,13 @@ export default function HomePage() {
 
             <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 hover:border-red-600 transition">
               <div className="h-64 bg-zinc-800 flex items-center justify-center">
-                <Theater className="h-16 w-16 text-zinc-700" />
+                <Image
+                  src="https://images.pexels.com/photos/6474133/pexels-photo-6474133.jpeg"
+                  alt="image"
+                  height={1000}
+                  width={1000}
+                  className="size-full"
+                />{" "}
               </div>
               <div className="p-6">
                 <h3 className="text-white font-semibold mb-2">
