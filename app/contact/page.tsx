@@ -224,7 +224,16 @@ export default function ContactPage() {
         <div className="max-w-7xl mx-auto">
           <div className="bg-zinc-950 border border-zinc-800 rounded-lg overflow-hidden">
             <div className="h-96 bg-zinc-800 flex items-center justify-center">
-              <MapPin className="h-20 w-20 text-zinc-700" />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.303899007696!2d-122.84926892334288!3d49.14462147931676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d9f62755b8db%3A0x31a630f18b993b49!2s7999%20King%20George%20Blvd%2C%20Surrey%2C%20BC%20V3W%205B3%2C%20Canada!5e0!3m2!1sen!2sca!4v1739817600000!5m2!1sen!2sca"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Home Tech Systems"
+              ></iframe>{" "}
             </div>
           </div>
         </div>
