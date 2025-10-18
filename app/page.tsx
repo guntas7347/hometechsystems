@@ -1,5 +1,4 @@
 import {
-  Shield,
   Camera,
   Bell,
   Wifi,
@@ -7,421 +6,358 @@ import {
   Theater,
   Wind,
   Network,
-  CheckCircle,
   Star,
   ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-zinc-950">
-      <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-zinc-900 to-zinc-950">
-        <div className="absolute inset-0 bg-[url('https://images.pexels.com/photos/207574/pexels-photo-207574.jpeg')] bg-cover bg-center opacity-30"></div>
-        <div className="relative text-center px-4 max-w-5xl mx-auto">
-          <Shield className="h-20 w-20 text-red-600 mx-auto mb-6" />
+    <div className="min-h-screen bg-white">
+      <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/assets/background.mp4" type="video/mp4" />
+        </video>
+
+        <div className="absolute inset-0 bg-gradient-to-r from-blue-400/80 to-blue-500/60 z-0"></div>
+
+        <div className="relative text-center px-4 max-w-5xl mx-auto z-10 animate-fadeInUp">
+          <Image
+            className="h-20 w-20 filter invert brightness-0 mx-auto mb-6 animate-float"
+            src="/assets/logo.png"
+            alt="logo"
+            width={1000}
+            height={1000}
+          />
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Secure Your Home
-            <br />
-            with <span className="text-red-600">Smart Technology</span>
+            Protect Your Home with <br />
+            <span className="text-blue-200">Smart Technology</span>
           </h1>
-          <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">
-            Professional CCTV, alarms, home automation, and advanced security
-            systems for modern living
+          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+            Advanced CCTV, alarms, automation, and security systems designed for
+            modern living
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
+            <Link
               href="/contact"
-              className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition inline-flex items-center justify-center"
+              className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition inline-flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105"
             >
-              Get Started <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-            <a
+              Get Free Consultation <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+            <Link
               href="#services"
-              className="bg-zinc-800 text-white px-8 py-4 rounded-lg font-semibold hover:bg-zinc-700 transition"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition shadow-lg"
             >
-              Our Services
-            </a>
+              Explore Services
+            </Link>
           </div>
         </div>
       </section>
 
-      <section id="services" className="py-20 px-4 bg-zinc-900">
+      <section
+        id="services"
+        className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white"
+      >
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">Our Services</h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Comprehensive home security and automation solutions tailored to
-              your needs
+          <div className="text-center mb-16 animate-fadeInUp">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Our Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Comprehensive security and automation solutions for your home
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Camera className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Camera className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 CCTV Systems
               </h3>
-              <p className="text-gray-400 text-sm">
-                Advanced surveillance with 4K cameras, night vision, and remote
-                monitoring
+              <p className="text-gray-600 text-sm">
+                4K surveillance with night vision and remote monitoring
               </p>
             </div>
 
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Bell className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
-                Fire & Security Alarms
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Bell className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                Security Alarms
               </h3>
-              <p className="text-gray-400 text-sm">
-                Smart alarm systems with instant alerts and emergency response
-                integration
+              <p className="text-gray-600 text-sm">
+                Smart alarms with instant alerts and emergency response
               </p>
             </div>
 
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Home className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Home className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Home Automation
               </h3>
-              <p className="text-gray-400 text-sm">
-                Control lighting, climate, and security from your smartphone
+              <p className="text-gray-600 text-sm">
+                Control everything from your smartphone
               </p>
             </div>
 
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Theater className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
-                AV Distribution
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Theater className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                AV Systems
               </h3>
-              <p className="text-gray-400 text-sm">
-                Multi-room audio and video distribution systems
+              <p className="text-gray-600 text-sm">
+                Multi-room audio and video distribution
               </p>
             </div>
 
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Network className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Network className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Networking
               </h3>
-              <p className="text-gray-400 text-sm">
-                High-speed network infrastructure and WiFi mesh systems
+              <p className="text-gray-600 text-sm">
+                High-speed WiFi mesh systems
               </p>
             </div>
 
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Wind className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Wind className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Central Vacuum
               </h3>
-              <p className="text-gray-400 text-sm">
-                Built-in vacuum systems for effortless home cleaning
+              <p className="text-gray-600 text-sm">
+                Built-in vacuum cleaning systems
               </p>
             </div>
 
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Theater className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Theater className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Home Theater
               </h3>
-              <p className="text-gray-400 text-sm">
-                Custom cinema-quality entertainment systems
+              <p className="text-gray-600 text-sm">
+                Cinema-quality entertainment
               </p>
             </div>
 
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg hover:border-red-600 transition group">
-              <Wifi className="h-12 w-12 text-red-600 mb-4 group-hover:scale-110 transition" />
-              <h3 className="text-xl font-semibold text-white mb-2">
+            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+              <Wifi className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
+              <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Smart Wiring
               </h3>
-              <p className="text-gray-400 text-sm">
-                Structured cabling for future-proof connectivity
-              </p>
+              <p className="text-gray-600 text-sm">Future-proof connectivity</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-zinc-950">
+      <section className="py-20 px-4 bg-blue-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Recent Projects
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Recent Works
             </h2>
-            <p className="text-gray-400">See our work in action</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 hover:border-red-600 transition">
-              <div className="h-64 bg-zinc-800 flex items-center justify-center">
-                <Image
-                  src="https://images.pexels.com/photos/1732414/pexels-photo-1732414.jpeg"
-                  alt="image"
-                  height={1000}
-                  width={1000}
-                  className="size-full"
-                />
-              </div>
-              <div className="p-6">
-                <h3 className="text-white font-semibold mb-2">
-                  Luxury Villa Security
-                </h3>
-                <p className="text-gray-400 text-sm">
-                  24-camera CCTV system with facial recognition
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 hover:border-red-600 transition">
-              <div className="h-64 bg-zinc-800 flex items-center justify-center">
-                <Image
-                  src="https://images.pexels.com/photos/20169858/pexels-photo-20169858.jpeg"
-                  alt="image"
-                  height={1000}
-                  width={1000}
-                  className="size-full"
-                />{" "}
-              </div>
-              <div className="p-6">
-                <h3 className="text-white font-semibold mb-2">
-                  Smart Home Integration
-                </h3>
-                <p className="text-gray-400 text-sm">
-                  Full home automation with voice control
-                </p>
-              </div>
-            </div>
-
-            <div className="bg-zinc-900 rounded-lg overflow-hidden border border-zinc-800 hover:border-red-600 transition">
-              <div className="h-64 bg-zinc-800 flex items-center justify-center">
-                <Image
-                  src="https://images.pexels.com/photos/6474133/pexels-photo-6474133.jpeg"
-                  alt="image"
-                  height={1000}
-                  width={1000}
-                  className="size-full"
-                />{" "}
-              </div>
-              <div className="p-6">
-                <h3 className="text-white font-semibold mb-2">
-                  Home Theater Setup
-                </h3>
-                <p className="text-gray-400 text-sm">
-                  7.2 surround sound with 4K projection
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 bg-zinc-900">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Client Testimonials
-            </h2>
-            <p className="text-gray-400">What our customers say about us</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg">
-              <div className="flex mb-4">
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-              </div>
-              <p className="text-gray-300 mb-4">
-                &rdquo;Outstanding service! The CCTV system they installed gives
-                us complete peace of mind. Highly professional team.&rdquo;
-              </p>
-              <p className="text-white font-semibold">Sarah Johnson</p>
-              <p className="text-gray-500 text-sm">Homeowner</p>
-            </div>
-
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg">
-              <div className="flex mb-4">
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-              </div>
-              <p className="text-gray-300 mb-4">
-                &rdquo;The home automation system has transformed our living
-                experience. Everything works seamlessly together.&rdquo;
-              </p>
-              <p className="text-white font-semibold">Michael Chen</p>
-              <p className="text-gray-500 text-sm">Property Developer</p>
-            </div>
-
-            <div className="bg-zinc-800 border border-zinc-700 p-6 rounded-lg">
-              <div className="flex mb-4">
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-                <Star className="h-5 w-5 text-yellow-500 fill-current" />
-              </div>
-              <p className="text-gray-300 mb-4">
-                &rdquo;Best investment we made for our home. The alarm system
-                and monitoring are top-notch. Excellent support!&rdquo;
-              </p>
-              <p className="text-white font-semibold">Emily Rodriguez</p>
-              <p className="text-gray-500 text-sm">Family Home</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 bg-zinc-950">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-white mb-4">
-              Pricing Plans
-            </h2>
-            <p className="text-gray-400">
-              Choose the perfect solution for your home
+            <p className="text-xl text-gray-600">
+              See our installations in action
             </p>
           </div>
 
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  height={1000}
+                  width={1000}
+                  src="https://images.pexels.com/photos/96612/pexels-photo-96612.jpeg"
+                  alt="CCTV Installation"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Luxury Villa Security
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  24-camera 4K CCTV system with facial recognition and night
+                  vision
+                </p>
+                <Link
+                  href="/works"
+                  className="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center"
+                >
+                  View Details <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  height={1000}
+                  width={1000}
+                  src="https://images.pexels.com/photos/1571460/pexels-photo-1571460.jpeg"
+                  alt="Smart Home"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Complete Smart Home
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  Full automation with voice control, lighting, and climate
+                  systems
+                </p>
+                <Link
+                  href="/works"
+                  className="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center"
+                >
+                  View Details <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+
+            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+              <div className="relative h-64 overflow-hidden">
+                <Image
+                  height={1000}
+                  width={1000}
+                  src="https://images.pexels.com/photos/1909791/pexels-photo-1909791.jpeg"
+                  alt="Home Theater"
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                />
+                <div className="absolute inset-0 bg-blue-600/20 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                  Premium Home Theater
+                </h3>
+                <p className="text-gray-600 text-sm mb-4">
+                  7.2 surround sound with 4K projection and acoustic treatment
+                </p>
+                <Link
+                  href="/works"
+                  className="text-blue-600 font-medium hover:text-blue-700 inline-flex items-center"
+                >
+                  View Details <ArrowRight className="ml-2 h-4 w-4" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <Link
+              href="/works"
+              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg"
+            >
+              View All Projects <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+              Client Testimonials
+            </h2>
+            <p className="text-xl text-gray-600">What our customers say</p>
+          </div>
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-lg hover:border-red-600 transition">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Basic Security
-              </h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-white">$2,999</span>
-                <span className="text-gray-400">/installation</span>
+            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="flex mb-4">
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
               </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>4 HD CCTV Cameras</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Basic Alarm System</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Mobile App Access</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>1 Year Warranty</span>
-                </li>
-              </ul>
-              <a
-                href="/contact"
-                className="block w-full bg-zinc-800 text-white py-3 rounded-lg text-center font-semibold hover:bg-zinc-700 transition"
-              >
-                Get Started
-              </a>
+              <p className="text-gray-700 mb-4">
+                &rdquo;Outstanding service! The CCTV system gives us complete
+                peace of mind. Highly professional team.&rdquo;
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-200 rounded-full mr-3"></div>
+                <div>
+                  <p className="font-semibold text-gray-900">Sarah Johnson</p>
+                  <p className="text-gray-600 text-sm">Homeowner</p>
+                </div>
+              </div>
             </div>
 
-            <div className="bg-gradient-to-b from-red-900/20 to-zinc-900 border-2 border-red-600 p-8 rounded-lg relative">
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-red-600 text-white px-4 py-1 rounded-full text-sm font-semibold">
-                Most Popular
+            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="flex mb-4">
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
               </div>
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Complete Home
-              </h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-white">$7,999</span>
-                <span className="text-gray-400">/installation</span>
+              <p className="text-gray-700 mb-4">
+                &rdquo;The home automation system transformed our living
+                experience. Everything works seamlessly together.&rdquo;
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-200 rounded-full mr-3"></div>
+                <div>
+                  <p className="font-semibold text-gray-900">Michael Chen</p>
+                  <p className="text-gray-600 text-sm">Property Developer</p>
+                </div>
               </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>12 4K CCTV Cameras</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Advanced Alarm System</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Home Automation Hub</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Network Setup</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>3 Years Warranty</span>
-                </li>
-              </ul>
-              <a
-                href="/contact"
-                className="block w-full bg-red-600 text-white py-3 rounded-lg text-center font-semibold hover:bg-red-700 transition"
-              >
-                Get Started
-              </a>
             </div>
 
-            <div className="bg-zinc-900 border border-zinc-800 p-8 rounded-lg hover:border-red-600 transition">
-              <h3 className="text-2xl font-bold text-white mb-4">
-                Premium Estate
-              </h3>
-              <div className="mb-6">
-                <span className="text-4xl font-bold text-white">$15,999+</span>
-                <span className="text-gray-400">/custom</span>
+            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
+              <div className="flex mb-4">
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
+                <Star className="h-5 w-5 text-yellow-400 fill-current" />
               </div>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Unlimited 4K Cameras</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Complete Smart Home</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>AV Distribution</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>Home Theater</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>5 Years Warranty</span>
-                </li>
-                <li className="flex items-start text-gray-300">
-                  <CheckCircle className="h-5 w-5 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
-                  <span>24/7 Priority Support</span>
-                </li>
-              </ul>
-              <a
-                href="/contact"
-                className="block w-full bg-zinc-800 text-white py-3 rounded-lg text-center font-semibold hover:bg-zinc-700 transition"
-              >
-                Contact Us
-              </a>
+              <p className="text-gray-700 mb-4">
+                &rdquo;Best investment for our home. The alarm system and
+                monitoring are top-notch. Excellent support!&rdquo;
+              </p>
+              <div className="flex items-center">
+                <div className="w-12 h-12 bg-blue-200 rounded-full mr-3"></div>
+                <div>
+                  <p className="font-semibold text-gray-900">Emily Rodriguez</p>
+                  <p className="text-gray-600 text-sm">Family Home</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-zinc-900">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-white mb-6">
+      <section className="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse-slow"></div>
+        </div>
+        <div className="max-w-4xl mx-auto text-center relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Ready to Secure Your Home?
           </h2>
-          <p className="text-xl text-gray-400 mb-8">
+          <p className="text-xl mb-8 text-blue-100">
             Get a free consultation and custom quote for your property
           </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center bg-red-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-red-700 transition"
+          <Link
+            href="/pricing"
+            className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:scale-105"
           >
-            Schedule Consultation <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
+            View Pricing Plans <ArrowRight className="ml-2 h-5 w-5" />
+          </Link>
         </div>
       </section>
     </div>

@@ -1,17 +1,22 @@
-import { Shield, Instagram, Phone, Mail } from "lucide-react";
+import { Instagram, Phone, Mail, Code } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-950 border-t border-zinc-800">
+    <footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center space-x-2 mb-4">
-              <Shield className="h-8 w-8 text-red-600" />
-              <span className="text-xl font-bold text-white">
-                HomeTech Systems
-              </span>
+              <Image
+                className="h-8 w-8 filter invert brightness-0"
+                src="/assets/logo.png"
+                alt="logo"
+                width={1000}
+                height={1000}
+              />
+              <span className="text-xl font-bold">HomeTech Systems</span>
             </div>
             <p className="text-gray-400 text-sm">
               Securing homes with cutting-edge technology.
@@ -19,7 +24,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4">Quick Links</h3>
             <div className="space-y-2">
               <Link
                 href="/"
@@ -34,6 +39,18 @@ export default function Footer() {
                 About
               </Link>
               <Link
+                href="/works"
+                className="block text-gray-400 hover:text-white text-sm transition"
+              >
+                Works
+              </Link>
+              <Link
+                href="/pricing"
+                className="block text-gray-400 hover:text-white text-sm transition"
+              >
+                Pricing
+              </Link>
+              <Link
                 href="/contact"
                 className="block text-gray-400 hover:text-white text-sm transition"
               >
@@ -43,7 +60,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4">Services</h3>
             <div className="space-y-2 text-sm text-gray-400">
               <p>CCTV Systems</p>
               <p>Fire & Security Alarms</p>
@@ -53,36 +70,44 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-white font-semibold mb-4">Contact</h3>
+            <h3 className="font-semibold mb-4">Contact</h3>
             <div className="space-y-3 text-sm text-gray-400">
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
-                <span>+1 (555) 123-4567</span>
+                <span>+1 (778)-833-4133</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4" />
-                <span>info@hometech.com</span>
+                <span>hometechsystemsltd@gmail.com</span>
               </div>
               <div className="flex items-center space-x-2">
                 <Instagram className="h-4 w-4" />
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/hometech_systems_ltd"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-white transition"
                 >
-                  @hometech
+                  @hometechsystems
+                </a>
+              </div>
+              <div className="flex items-center space-x-2">
+                <Code className="h-4 w-4" />
+                <a
+                  href="https://guntassandhu.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-white transition"
+                >
+                  Developer
                 </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-zinc-800 mt-8 pt-8 text-center text-gray-400 text-sm">
-          <p>
-            &copy; 2025 HomeTech Systems. All rights reserved. Managing
-            Director: Sukhman Sekhon
-          </p>
+        <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400 text-sm">
+          <p>&copy; 2025 HomeTech Systems. All rights reserved. Managing</p>
         </div>
       </div>
     </footer>
