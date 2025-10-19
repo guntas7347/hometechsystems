@@ -14,7 +14,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)]">
       <section className="relative w-full h-screen flex items-center justify-center overflow-hidden">
         <video
           autoPlay
@@ -53,7 +53,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="#services"
-              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition shadow-lg"
+              className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition shadow-lg"
             >
               Explore Services
             </Link>
@@ -63,7 +63,7 @@ export default function HomePage() {
 
       <section
         id="services"
-        className="py-20 px-4 bg-gradient-to-b from-gray-50 to-white"
+        className="py-20 px-4 bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)]"
       >
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16 animate-fadeInUp">
@@ -76,7 +76,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Camera className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 CCTV Systems
@@ -86,7 +86,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Bell className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Security Alarms
@@ -96,7 +96,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Home className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Home Automation
@@ -106,7 +106,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Theater className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 AV Systems
@@ -116,7 +116,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Network className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Networking
@@ -126,7 +126,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Wind className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Central Vacuum
@@ -136,7 +136,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Theater className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Home Theater
@@ -146,7 +146,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="bg-white border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] border-2 border-gray-200 p-6 rounded-xl hover:border-blue-500 hover:shadow-xl transition-all transform hover:-translate-y-2 group">
               <Wifi className="h-12 w-12 text-blue-600 mb-4 group-hover:scale-110 transition" />
               <h3 className="text-xl font-semibold text-gray-900 mb-2">
                 Smart Wiring
@@ -169,7 +169,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   height={1000}
@@ -197,7 +197,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   height={1000}
@@ -225,7 +225,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
+            <div className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-2 group">
               <div className="relative h-64 overflow-hidden">
                 <Image
                   height={1000}
@@ -264,7 +264,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -342,8 +342,8 @@ export default function HomePage() {
 
       <section className="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-10 left-10 w-64 h-64 bg-white rounded-full blur-3xl animate-pulse-slow"></div>
-          <div className="absolute bottom-10 right-10 w-96 h-96 bg-white rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute top-10 left-10 w-64 h-64 bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] rounded-full blur-3xl animate-pulse-slow"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] rounded-full blur-3xl animate-pulse-slow"></div>
         </div>
         <div className="max-w-4xl mx-auto text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
@@ -354,7 +354,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/pricing"
-            className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:scale-105"
+            className="inline-flex items-center bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:scale-105"
           >
             View Pricing Plans <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
