@@ -45,10 +45,10 @@ export default function Footer() {
                 Works
               </Link>
               <Link
-                href="/pricing"
+                href="/packages"
                 className="block text-gray-400 hover:text-white text-sm transition"
               >
-                Pricing
+                Packages
               </Link>
               <Link
                 href="/contact"
