@@ -58,10 +58,10 @@ export default function Navbar() {
               Works
             </Link>
             <Link
-              href="/pricing"
+              href="/packages"
               className="text-gray-700 hover:text-blue-600 transition font-medium"
             >
-              Pricing
+              Packages
             </Link>
             <Link
               href="/contact"

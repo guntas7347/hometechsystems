@@ -63,9 +63,7 @@ export default function WorksPage() {
                   </span>
                 </li>
               </ul>
-              <p className="text-sm text-gray-500">
-                Completed: January 2025 • Location: Beverly Hills
-              </p>
+              <p className="text-sm text-gray-500">Completed: January 2025</p>
             </div>
             <div className="order-1 md:order-2">
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
@@ -149,9 +147,7 @@ export default function WorksPage() {
                   </span>
                 </li>
               </ul>
-              <p className="text-sm text-gray-500">
-                Completed: December 2024 • Location: San Francisco
-              </p>
+              <p className="text-sm text-gray-500">Completed: December 2024</p>
             </div>
           </div>
 
@@ -194,9 +190,7 @@ export default function WorksPage() {
                   </span>
                 </li>
               </ul>
-              <p className="text-sm text-gray-500">
-                Completed: November 2024 • Location: Los Angeles
-              </p>
+              <p className="text-sm text-gray-500">Completed: November 2024</p>
             </div>
             <div className="order-1 md:order-2">
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
@@ -251,27 +245,25 @@ export default function WorksPage() {
             </div>
             <div>
               <span className="inline-block bg-blue-100 text-blue-600 px-4 py-1 rounded-full text-sm font-semibold mb-4">
-                Fire & Security Alarms
+                Security Alarms
               </span>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">
                 Commercial Building Security
               </h2>
               <p className="text-gray-600 mb-6">
-                Comprehensive security and fire alarm system for a 5-story
-                commercial building. Integration with emergency services and
-                building management systems for optimal safety.
+                Comprehensive security and alarm system for a 5-story commercial
+                building. Integration with emergency services and building
+                management systems for optimal safety.
               </p>
               <ul className="space-y-3 mb-6">
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
-                  <span className="text-gray-700">
-                    120 Smart Smoke Detectors
-                  </span>
+                  <span className="text-gray-700">Smart Alarms</span>
                 </li>
                 <li className="flex items-start">
                   <span className="text-blue-600 mr-2">✓</span>
                   <span className="text-gray-700">
-                    Fire Suppression System Integration
+                    Advanced Security Integration
                   </span>
                 </li>
                 <li className="flex items-start">
@@ -287,9 +279,7 @@ export default function WorksPage() {
                   </span>
                 </li>
               </ul>
-              <p className="text-sm text-gray-500">
-                Completed: October 2024 • Location: Seattle
-              </p>
+              <p className="text-sm text-gray-500">Completed: October 2024</p>
             </div>
           </div>
 

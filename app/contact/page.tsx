@@ -78,7 +78,7 @@ export default function ContactPage() {
                   >
                     <option value="">Select a service</option>
                     <option value="cctv">CCTV Systems</option>
-                    <option value="alarms">Fire & Security Alarms</option>
+                    <option value="alarms">Security Alarms</option>
                     <option value="automation">Home Automation</option>
                     <option value="av">AV Distribution</option>
                     <option value="networking">Networking</option>

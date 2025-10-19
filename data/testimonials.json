@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Dhaba Dosa",
+    "role": "20381 63 Ave #301, Langley, BC",
+    "message": "Outstanding service! The CCTV system gives us complete peace of mind. Highly professional team.",
+    "avatarColor": "bg-blue-200"
+  },
+  {
+    "name": "Border Burrito",
+    "role": "borderburrito.ca",
+    "message": "The home automation system transformed our work experience. Everything works seamlessly together.",
+    "avatarColor": "bg-green-200"
+  },
+  {
+    "name": "Dosa Club",
+    "role": "dosaclub.ca",
+    "message": "Best investment for our work space. The alarm system and monitoring are top-notch. Excellent support!",
+    "avatarColor": "bg-purple-200"
+  }
+]

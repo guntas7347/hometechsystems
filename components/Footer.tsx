@@ -63,7 +63,7 @@ export default function Footer() {
             <h3 className="font-semibold mb-4">Services</h3>
             <div className="space-y-2 text-sm text-gray-400">
               <p>CCTV Systems</p>
-              <p>Fire & Security Alarms</p>
+              <p>Security Alarms</p>
               <p>Home Automation</p>
               <p>AV Distribution</p>
             </div>

@@ -15,7 +15,7 @@ export default function PricingPage() {
           <div className="text-center max-w-3xl mx-auto">
             <Shield className="h-16 w-16 text-blue-600 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
-              Pricing Plans
+              Packages
             </h1>
             <p className="text-xl text-gray-600">
               Choose the perfect security and automation package for your home.
@@ -37,10 +37,7 @@ export default function PricingPage() {
                   Perfect for apartments and small homes
                 </p>
               </div>
-              <div className="mb-8">
-                <span className="text-5xl font-bold text-gray-900">$2,999</span>
-                <span className="text-gray-600 ml-2">/installation</span>
-              </div>
+
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
@@ -125,10 +122,7 @@ export default function PricingPage() {
                   Comprehensive protection for family homes
                 </p>
               </div>
-              <div className="mb-8">
-                <span className="text-5xl font-bold text-white">$7,999</span>
-                <span className="text-blue-100 ml-2">/installation</span>
-              </div>
+
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-yellow-400 mr-3 flex-shrink-0 mt-0.5" />
@@ -223,12 +217,7 @@ export default function PricingPage() {
                   Ultimate protection for luxury properties
                 </p>
               </div>
-              <div className="mb-8">
-                <span className="text-5xl font-bold text-gray-900">
-                  $15,999+
-                </span>
-                <span className="text-gray-600 ml-2">/custom</span>
-              </div>
+
               <ul className="space-y-4 mb-8">
                 <li className="flex items-start">
                   <CheckCircle className="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-0.5" />
@@ -328,16 +317,14 @@ export default function PricingPage() {
 
           <div className="bg-gradient-to-br from-blue-50 to-white rounded-2xl p-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Individual Services Pricing
+              Individual Services Packages
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   CCTV Cameras (Per Unit)
                 </h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  $299 - $799
-                </p>
+
                 <ul className="space-y-2 text-gray-600">
                   <li>• HD/4K options available</li>
                   <li>• Night vision capability</li>
@@ -350,9 +337,7 @@ export default function PricingPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Alarm Systems
                 </h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  $1,499 - $4,999
-                </p>
+
                 <ul className="space-y-2 text-gray-600">
                   <li>• Fire and security sensors</li>
                   <li>• 24/7 monitoring option</li>
@@ -365,9 +350,7 @@ export default function PricingPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Home Automation
                 </h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  $2,999 - $9,999
-                </p>
+
                 <ul className="space-y-2 text-gray-600">
                   <li>• Smart lighting and climate</li>
                   <li>• Voice control integration</li>
@@ -380,9 +363,7 @@ export default function PricingPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Home Theater
                 </h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  $5,999 - $25,000+
-                </p>
+
                 <ul className="space-y-2 text-gray-600">
                   <li>• Surround sound systems</li>
                   <li>• 4K projection setup</li>
@@ -395,9 +376,7 @@ export default function PricingPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Network Setup
                 </h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  $999 - $3,999
-                </p>
+
                 <ul className="space-y-2 text-gray-600">
                   <li>• Mesh WiFi systems</li>
                   <li>• Whole-home coverage</li>
@@ -410,9 +389,7 @@ export default function PricingPage() {
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
                   Central Vacuum
                 </h3>
-                <p className="text-3xl font-bold text-blue-600 mb-4">
-                  $3,499 - $6,999
-                </p>
+
                 <ul className="space-y-2 text-gray-600">
                   <li>• Whole-house system</li>
                   <li>• Multiple inlet ports</li>
@@ -421,49 +398,6 @@ export default function PricingPage() {
                 </ul>
               </div>
             </div>
-          </div>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-            Financing Options Available
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-            <div className="text-center p-6 bg-blue-50 rounded-xl">
-              <p className="text-4xl font-bold text-blue-600 mb-2">0%</p>
-              <p className="text-gray-700 font-semibold">
-                Interest for 12 months
-              </p>
-              <p className="text-sm text-gray-600 mt-2">
-                On purchases over $5,000
-              </p>
-            </div>
-            <div className="text-center p-6 bg-blue-50 rounded-xl">
-              <p className="text-4xl font-bold text-blue-600 mb-2">24</p>
-              <p className="text-gray-700 font-semibold">Month payment plans</p>
-              <p className="text-sm text-gray-600 mt-2">
-                Flexible monthly payments
-              </p>
-            </div>
-            <div className="text-center p-6 bg-blue-50 rounded-xl">
-              <p className="text-4xl font-bold text-blue-600 mb-2">Free</p>
-              <p className="text-gray-700 font-semibold">
-                Consultation & Quote
-              </p>
-              <p className="text-sm text-gray-600 mt-2">
-                No obligation required
-              </p>
-            </div>
-          </div>
-          <div className="text-center">
-            <Link
-              href="/contact"
-              className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg"
-            >
-              Schedule Free Consultation
-            </Link>
           </div>
         </div>
       </section>

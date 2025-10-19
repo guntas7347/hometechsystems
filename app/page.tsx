@@ -1,3 +1,4 @@
+import TestimonialsSection from "@/components/TestimonialsSection";
 import {
   Camera,
   Bell,
@@ -6,11 +7,12 @@ import {
   Theater,
   Wind,
   Network,
-  Star,
   ArrowRight,
 } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+
+import testimonials from "@/data/testimonials.json";
 
 export default function HomePage() {
   return (
@@ -53,7 +55,7 @@ export default function HomePage() {
             </Link>
             <Link
               href="#services"
-              className="bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition shadow-lg"
+              className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition shadow-lg"
             >
               Explore Services
             </Link>
@@ -264,81 +266,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-20 px-4 bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)]">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Client Testimonials
-            </h2>
-            <p className="text-xl text-gray-600">What our customers say</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              <div className="flex mb-4">
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-              </div>
-              <p className="text-gray-700 mb-4">
-                &rdquo;Outstanding service! The CCTV system gives us complete
-                peace of mind. Highly professional team.&rdquo;
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-blue-200 rounded-full mr-3"></div>
-                <div>
-                  <p className="font-semibold text-gray-900">Sarah Johnson</p>
-                  <p className="text-gray-600 text-sm">Homeowner</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              <div className="flex mb-4">
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-              </div>
-              <p className="text-gray-700 mb-4">
-                &rdquo;The home automation system transformed our living
-                experience. Everything works seamlessly together.&rdquo;
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-blue-200 rounded-full mr-3"></div>
-                <div>
-                  <p className="font-semibold text-gray-900">Michael Chen</p>
-                  <p className="text-gray-600 text-sm">Property Developer</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-gradient-to-br from-blue-50 to-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-all">
-              <div className="flex mb-4">
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-                <Star className="h-5 w-5 text-yellow-400 fill-current" />
-              </div>
-              <p className="text-gray-700 mb-4">
-                &rdquo;Best investment for our home. The alarm system and
-                monitoring are top-notch. Excellent support!&rdquo;
-              </p>
-              <div className="flex items-center">
-                <div className="w-12 h-12 bg-blue-200 rounded-full mr-3"></div>
-                <div>
-                  <p className="font-semibold text-gray-900">Emily Rodriguez</p>
-                  <p className="text-gray-600 text-sm">Family Home</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <TestimonialsSection testimonials={testimonials} />
 
       <section className="py-20 px-4 bg-gradient-to-br from-blue-600 to-blue-800 text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
@@ -353,10 +281,10 @@ export default function HomePage() {
             Get a free consultation and custom quote for your property
           </p>
           <Link
-            href="/pricing"
-            className="inline-flex items-center bg-[conic-gradient(at_top_left,_#3b82f6_0%,_transparent_30%)] text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:scale-105"
+            href="/packages"
+            className="inline-flex items-center bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition shadow-lg hover:shadow-xl transform hover:scale-105"
           >
-            View Pricing Plans <ArrowRight className="ml-2 h-5 w-5" />
+            View Plans <ArrowRight className="ml-2 h-5 w-5" />
           </Link>
         </div>
       </section>
