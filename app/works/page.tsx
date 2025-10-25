@@ -195,7 +195,7 @@ export default function WorksPage() {
             <div className="order-1 md:order-2">
               <div className="relative rounded-xl overflow-hidden shadow-2xl">
                 <Image
-                  src="https://images.pexels.com/photos/1909791/pexels-photo-1909791.jpeg"
+                  src="https://images.pexels.com/photos/7031762/pexels-photo-7031762.jpeg"
                   alt="Home Theater"
                   className="w-full h-96 object-cover"
                   width={1920}
@@ -328,7 +328,7 @@ export default function WorksPage() {
 
             <div className="bg-gradient-to-br from-blue-50 to-white rounded-xl overflow-hidden shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-2">
               <Image
-                src="https://images.pexels.com/photos/3316924/pexels-photo-3316924.jpeg"
+                src="https://images.pexels.com/photos/38325/vacuum-cleaner-carpet-cleaner-housework-housekeeping-38325.jpeg"
                 alt="Central Vacuum"
                 className="w-full h-48 object-cover"
                 width={1920}

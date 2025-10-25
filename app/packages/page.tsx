@@ -128,7 +128,7 @@ export default function PricingPage() {
                   <CheckCircle className="h-6 w-6 text-yellow-400 mr-3 flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold text-white">
-                      12x 4K CCTV Cameras
+                      8x 4K CCTV Cameras
                     </p>
                     <p className="text-sm text-blue-100">
                       Ultra HD with advanced night vision
@@ -142,7 +142,7 @@ export default function PricingPage() {
                       Advanced Alarm System
                     </p>
                     <p className="text-sm text-blue-100">
-                      Glass break sensors and smoke detectors
+                      Touchpad/motion and smoke detector
                     </p>
                   </div>
                 </li>
@@ -175,7 +175,7 @@ export default function PricingPage() {
                       30 Days Cloud Storage
                     </p>
                     <p className="text-sm text-blue-100">
-                      Plus local backup DVR
+                      Local backup storage
                     </p>
                   </div>
                 </li>
@@ -322,7 +322,7 @@ export default function PricingPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-xl border border-gray-200 hover:border-blue-500 transition">
                 <h3 className="text-xl font-bold text-gray-900 mb-2">
-                  CCTV Cameras (Per Unit)
+                  CCTV Cameras
                 </h3>
 
                 <ul className="space-y-2 text-gray-600">
@@ -339,9 +339,9 @@ export default function PricingPage() {
                 </h3>
 
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Fire and security sensors</li>
+                  <li>• Window-Door sensors</li>
                   <li>• 24/7 monitoring option</li>
-                  <li>• Mobile alerts</li>
+                  <li>• Digital Keypads</li>
                   <li>• Professional setup</li>
                 </ul>
               </div>
@@ -367,7 +367,7 @@ export default function PricingPage() {
                 <ul className="space-y-2 text-gray-600">
                   <li>• Surround sound systems</li>
                   <li>• 4K projection setup</li>
-                  <li>• Acoustic treatment</li>
+                  <li>• 5.1 and 7.2 audio setup</li>
                   <li>• Custom design</li>
                 </ul>
               </div>
@@ -391,10 +391,11 @@ export default function PricingPage() {
                 </h3>
 
                 <ul className="space-y-2 text-gray-600">
-                  <li>• Whole-house system</li>
-                  <li>• Multiple inlet ports</li>
-                  <li>• HEPA filtration</li>
-                  <li>• Installation included</li>
+                  <li>• Hide-A-Hose Systems </li>
+                  <li>• Car Care Kit</li>
+                  <li>• Super Valve Inlet</li>
+                  <li>• WallyFlex</li>
+                  <li>• Installation</li>
                 </ul>
               </div>
             </div>
